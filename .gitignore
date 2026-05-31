@@ -1,0 +1,19 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Ignore secrets and credential files
+*.secret
+*.key
+*.pem
+*.p12
+*.jks
+*.crt
+*.cer
+credentials.json
+secrets/
