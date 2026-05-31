@@ -9,8 +9,8 @@ This contains everything you need to create your own app with Mwesigwaali.
 Visit Mwesigwaali Today: 
 
 ## Reach to us
-[https://mwesigwaelias.github.io/mwesigwaali/]
+**Website **[https://mwesigwaelias.github.io/mwesigwaali/]
 
-**email:**  mwesigwaali@gmail.com
+**Email: **  mwesigwaali@gmail.com
 
 
