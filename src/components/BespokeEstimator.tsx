@@ -27,18 +27,18 @@ export default function BespokeEstimator({ initialTech, onInquirySubmitted, onCo
   const [timeline, setTimeline] = useState<string>('3 Months');
 
   const platforms = [
-    { id: 'web', label: 'Enterprise Web Platform', basePrice: 3500, icon: Layers, desc: 'Responsive SaaS portal built with React Vite and modular dashboards.' },
-    { id: 'mobile', label: 'Native Mobile Workspace', basePrice: 4000, icon: Smartphone, desc: 'Flutter or React Native cross-platform app compiled for iOS & Android.' },
-    { id: 'desktop', label: 'Bespoke Desktop Client', basePrice: 4500, icon: Cpu, desc: 'Offline-capable administrative client built with C#/.NET or Flutter Desktop.' },
-    { id: 'ai', label: 'AI Prediction Pipeline', basePrice: 6000, icon: Sparkles, desc: 'Neural networks, PyTorch engines, computer vision crop analysis or custom LLM grounding.' },
+    { id: 'web', label: 'Enterprise Web Platform', basePrice: 500, icon: Layers, desc: 'Responsive SaaS portal built with React Vite and modular dashboards.' },
+    { id: 'mobile', label: 'Native Mobile Workspace', basePrice: 700, icon: Smartphone, desc: 'Flutter or React Native cross-platform app compiled for iOS & Android.' },
+    { id: 'desktop', label: 'Bespoke Desktop Client', basePrice: 700, icon: Cpu, desc: 'Offline-capable administrative client built with C#/.NET or Flutter Desktop.' },
+    { id: 'ai', label: 'AI Prediction Pipeline', basePrice: 1000, icon: Sparkles, desc: 'Neural networks, PyTorch engines, computer vision crop analysis or custom LLM grounding.' },
   ];
 
   const integrationOptions = [
-    { id: 'mobile_money', label: 'MTN & Airtel Mobile Money Integrations', price: 1500, desc: 'Secure webhook callbacks handles local transaction registries.' },
+    { id: 'mobile_money', label: 'MTN & Airtel Mobile Money Integrations', price: 1000, desc: 'Secure webhook callbacks handles local transaction registries.' },
     { id: 'auth_jwt', label: 'Multi-Role JWT Auth & Auditing', price: 800, desc: 'Strict identity permissions guards enterprise dashboard pages.' },
-    { id: 'supabase_realtime', label: 'Supabase Real-time Sync', price: 1000, desc: 'No-delay updates across client device networks using WebSockets.' },
-    { id: 'custom_vision', label: 'Computer Vision Core Models', price: 2500, desc: 'PyTorch leaf defect detection or customized prediction indexes.' },
-    { id: 'reporting_pdf', label: 'Automated Document & PDF Generator', price: 600, desc: 'Transactional load sheets and exportable spreadsheets.' },
+    { id: 'supabase_realtime', label: 'Supabase Real-time Sync', price: 500, desc: 'No-delay updates across client device networks using WebSockets.' },
+    { id: 'custom_vision', label: 'Computer Vision Core Models', price: 500, desc: 'PyTorch leaf defect detection or customized prediction indexes.' },
+    { id: 'reporting_pdf', label: 'Automated Document & PDF Generator', price: 500, desc: 'Transactional load sheets and exportable spreadsheets.' },
   ];
 
   const techStackOptions = [
@@ -48,7 +48,7 @@ export default function BespokeEstimator({ initialTech, onInquirySubmitted, onCo
   // Calculations
   const calculatedEstimate = useMemo(() => {
     const matchedPlatform = platforms.find((p) => p.id === projectType);
-    const platformPrice = matchedPlatform ? matchedPlatform.basePrice : 3000;
+    const platformPrice = matchedPlatform ? matchedPlatform.basePrice : 1000;
     
     // Sum integration costs
     const integrationsPrice = integrations.reduce((sum, item) => {
